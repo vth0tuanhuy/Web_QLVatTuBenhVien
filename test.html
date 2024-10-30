@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin sản phẩm</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /* CSS cho bảng thông tin */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="inner_Supplies col-4" id="18">
+        <div class="img">
+            <img src="ANH/nhiet_ke_thuy_ngan.jpg" alt="Nhiệt kế thủy ngân" />
+        </div>
+        <div class="id">
+            <span>Ma VT</span>
+            <span>18</span>
+        </div>
+        <div class="chi_tiet">
+            <div class="hang">Aurora (Việt Nam)</div>
+            <div class="mo_ta">Nhiệt kế thủy ngân được làm bằng chất liệu thủy tinh, có thang chia độ rõ ràng, thiết kế nhỏ gọn và dễ sử dụng. Kiểm tra nhiệt độ trong môi trường và nước.</div>
+            <div class="model">Nhiệt kế thủy ngân Aurora</div>
+        </div>
+        <div class="name">
+            <span>Tên:</span>
+            <span style="color: var(--color-one)"><b>Nhiệt kế thủy ngân</b></span>
+        </div>
+        <div class="amount">
+            <span>Số lượng:</span>
+            <span style="color: var(--color-one)"><b>50 hộp</b></span>
+        </div>
+        <!-- Bảng thông tin -->
+        <table id="productTable">
+            <tr>
+                <th>Nhà sản xuất:</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Model:</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Mô tả:</th>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            // Truy cập vào phần inner_Supplies
+            var suppliesContainer = $(".inner_Supplies");
+
+            // Lấy ra thông tin từ các phần tử con
+            suppliesContainer.each(function() {
+                var manufacturer = $(this).find(".hang").text();
+                var model = $(this).find(".model").text();
+                var description = $(this).find(".mo_ta").text();
+
+                // Điền thông tin vào bảng
+                $(this).find("#productTable td").eq(0).text(manufacturer);
+                $(this).find("#productTable td").eq(1).text(model);
+                $(this).find("#productTable td").eq(2).text(description);
+            });
+        });
+    </script>
+</body>
+</html>

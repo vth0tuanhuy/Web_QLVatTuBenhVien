@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="CSS/BASS.css" />
+    <link rel="stylesheet" href="CSS/Login.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="inner-main">
+        <div class="inner-logo">
+          <img
+            src="ANH/key_time_random_1910354287_time_1571615294.png"
+            alt="logo"
+          />
+        </div>
+        <div class="inner-title">
+          <h4>QUẢN LÝ VẬT TƯ BỆNH VIỆN ĐA KHOA HÀ ĐÔNG</h4>
+        </div>
+        <div class="inner-menu">
+          <ul>
+            <li>
+              <a href="index1.html">Trang chủ</a>
+            </li>
+            <li>
+              <a href="Login.html">Đăng nhập</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+            <div class="card border-0 shadow rounded-3 my-5">
+              <div class="card-body p-4 p-sm-5">
+                <h5 class="card-title text-center mb-5 fw-light fs-5">
+                  Sign In
+                </h5>
+                <form>
+                  <div class="form-floating mb-3">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="floatingInput"
+                      placeholder="name@example.com"
+                    />
+                    <label for="floatingInput">Email address</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="floatingPassword"
+                      placeholder="Password"
+                    />
+                    <label for="floatingPassword">Password</label>
+                  </div>
+
+                  <div class="form-check mb-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="rememberPasswordCheck"
+                    />
+                    <label class="form-check-label" for="rememberPasswordCheck">
+                      Remember password
+                    </label>
+                  </div>
+                  <div class="d-grid">
+                    <button
+                      class="btn btn-primary btn-login text-uppercase fw-bold"
+                      id="sing_in"
+                      type="submit"
+                    >
+                      Sign in
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="footer-fix">
+      <div class="footer-title">
+        <h5>SỰ HÀI LÒNG CỦA NGƯỜI BỆNH LÀ UY TÍN CỦA CHÚNG TÔI</h5>
+        <h7>
+          <i class="fa-solid fa-location-dot"></i>
+          Số 2 Bế Văn Đàn, Phường Quang Trung, Quận Hà Đông, Thành Phố Hà Nội
+        </h7>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script>
+    $(document).ready(function () {
+      // Kiểm tra xem liệu đã có thông tin người dùng được lưu trong localStorage hay không
+      var password = localStorage.getItem("password");
+      if (password) {
+        $("#floatingPassword").val(password);
+      }
+
+      // Khi người dùng nhấn vào nút "Ghi nhớ mật khẩu", lưu thông tin vào localStorage
+      $("#rememberPasswordCheck").change(function () {
+        if ($(this).is(":checked")) {
+          localStorage.setItem("password", $("#floatingPassword").val());
+        } else {
+          localStorage.removeItem("password");
+        }
+      });
+
+      $("#sing_in").click(function (e) {
+        e.preventDefault();
+        let isValid = false;
+// Lấy danh sách tài khoản từ localStorage
+let accountList = localStorage.getItem('ListAccout');
+    
+if (accountList) {
+  $(accountList).each(function(){
+    var idAccount = $(this).find(' .name span:nth-of-type(2)').text().trim();
+    var password=$(this).find('.password span:nth-of-type(2)').text().trim();
+    if(idAccount===$("#floatingInput").val()&&$("#floatingPassword").val()===password &&$("#floatingInput").val()!=""){
+      isValid = true;
+      localStorage.setItem('Accoutacess',$("#floatingInput").val())
+      return false;
+    }
+  })
+
+}
+        if (
+          $("#floatingInput").val() == "admin@gmail.com" &&
+          $("#floatingPassword").val() == "1"
+        ) {
+          const Toast = Swal.mixin({
+            toast: true,
+            position: "top-end",
+            showConfirmButton: false,
+            timer: 1000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.onmouseenter = Swal.stopTimer;
+              toast.onmouseleave = Swal.resumeTimer;
+            },
+          });
+          Toast.fire({
+            icon: "success",
+            title: "Signed in  addminAccount successfully",
+          }).then(function () {
+            window.location.href = "admin.html";
+          });
+        } else if (
+          isValid||$("#floatingInput").val() == "client@gmail.com" &&
+          $("#floatingPassword").val() == "1"
+        ) {
+          const Toast = Swal.mixin({
+            toast: true,
+            position: "top-end",
+            showConfirmButton: false,
+            timer: 1000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.onmouseenter = Swal.stopTimer;
+              toast.onmouseleave = Swal.resumeTimer;
+            },
+          });
+          Toast.fire({
+            icon: "success",
+            title: "Signed in Customer Account successfully",
+          }).then(function () {
+            window.location.href = "client.html";
+          });
+        } else {
+          const Toast = Swal.mixin({
+            toast: true,
+            position: "top-end",
+            showConfirmButton: false,
+            timer: 1000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.onmouseenter = Swal.stopTimer;
+              toast.onmouseleave = Swal.resumeTimer;
+            },
+          });
+          Toast.fire({
+            icon: "error",
+            title: "Login in failed",
+          });
+        }
+      });
+    });
+  </script>
+</html>

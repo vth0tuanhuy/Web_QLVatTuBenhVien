@@ -1,0 +1,302 @@
+body{
+    overflow-x: hidden;
+}
+/* header */
+header{
+    position: fixed;
+    width: 100%;
+    transition: top 0.3s ease; /* Hiệu ứng khi thay đổi vị trí */
+    z-index: 9999999;
+}
+.header .inner-main{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.header.hidden {
+    top: -100px; /* Dịch chuyển header khi nó bị ẩn */
+}
+.header .inner-main .inner-logo img{
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+.header .inner-main .inner-title{
+    color: #fff;
+}
+.header .inner-main .inner-menu ul{
+    list-style-type: none;
+    display: flex;
+    position: absolute;
+    right: 0px;
+    top: 32%;
+}
+.header .inner-main .inner-menu ul li{
+    margin-right: 50px;
+}
+.header .inner-main .inner-menu ul li a{
+     text-decoration: none;
+     font-size: 20px;
+     color: #fff;
+}
+.header .inner-main .inner-menu ul li::after{
+    content: "";
+    border: 2px solid var(--color-two);
+    margin-left: 10px;
+}
+.header .inner-main .inner-menu ul li a:hover{
+    color: var(--color-two);
+}
+/* end header */
+
+
+
+/* main */
+.section-1{
+    margin:0px 0 20px 0;
+    height: 800px;
+    color:#000;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease-in-out; /
+}
+.section{
+    margin: 0px 0 20px 0;
+    height: 1000px;
+    color: #000;
+    position: relative;
+    overflow: hidden;
+}
+#myVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+.box{
+    position: relative;
+    z-index: 1;
+    width: 1000px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 5px ;
+    position: relative;
+    top:20%;
+    left: 18%;
+    padding-top: 60px;
+    padding: 20px; /* Có thể điều chỉnh để tạo khoảng cách với nội dung */
+    text-align: center;
+}
+
+
+.box span {
+    color: white; /* Màu chữ trắng để tạo sự tương phản với nền mờ */
+}
+
+.box .log-in{
+    background-color: #000;
+    padding: 5px;
+    width: 200px;
+    color: #FFF;
+    margin-top: 10px;
+    position: relative;
+    left: 40%;
+}
+.box .log-in:hover{
+    opacity: 0.7;
+}
+.box .log-in a{
+    text-decoration: none;
+    color: #fff;
+}
+ .inner-main-service{
+    color:#ffff;
+ }
+ .inner-main-service .title{
+    margin:30px 0px 30px 0px;
+ }
+ .follow-up-support .title{
+    margin:30px 0px 11px 0px;
+ }
+
+ .inner-main-service .inner-logo{
+    position: relative;
+    left: 40%;
+    top: -220px;
+    i{
+      
+        color: #fff;
+        border-radius:50% ;
+        font-size: 50px;
+        text-align: center;
+        padding-top: 20%;
+    }
+}
+
+.section-2{
+    width: 100%;
+    height: 800px;
+    position:relative;
+    top: 110%;
+}
+.section-2 .img-title{
+    height: 0;
+
+}
+.section-2 .img-title img{
+    
+    position: absolute;
+    top: 20%;
+    left: -10%;
+    width: 120%;
+    height: 100%;
+    
+}
+
+.inner-logo .content{
+    position: absolute;
+    width: 100%;
+    top: 200%;
+    left: -20%;
+    font-size: 20px;
+    color: #FFF;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5); /* Màu nền với độ mờ 50% */
+    padding: 20px; /* Có thể điều chỉnh để tạo khoảng cách với nội dung */
+    
+}
+
+
+/* end main */
+
+
+
+
+
+/* footer fix */
+body{
+    position: relative;
+}
+.footer-fix{
+    width: 1540px;
+    position: absolute;
+    bottom: -10%;
+    background-color: var(--color-one);
+    color: #FFF;
+}
+.colored-box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color:var(--color-one);
+    display: none; 
+}
+.footer-fix .footer-title{
+    text-align: center;
+}
+/* end footer  fix*/
+/* footer */
+/* footer{
+    margin-top: 30px;
+    background-color: var(--color-two);
+}
+.container{
+    padding: 100px;
+}
+.inner-title-contact{
+    text-align: center;
+    margin-top: 20px;
+}
+.Contact-Info{
+    position: relative;
+}
+.contact-infor-logo{
+    position: absolute;
+    left: 45%;
+    top: -50px;
+    i{
+        width: 50px;
+        height: 50px;
+        background-color: aqua;
+        color: var(--color-two);
+        border-radius:50% ;
+        font-size: 30px;
+        text-align: center;
+        padding-top: 20%;
+    }
+}
+.Working-time{
+    position: relative;
+    padding-left: 3%;
+}
+.inner-title-Working-time{
+    text-align: center;
+    margin-top: 20px;
+}
+.Working-time-logo{
+    position: absolute;
+    left: 45%;
+    top: -50px;
+    i{
+        width: 50px;
+        height: 50px;
+        background-color: aqua;
+        color: var(--color-two);
+        border-radius:50% ;
+        font-size: 30px;
+        text-align: center;
+        padding-top: 20%;
+    }
+}
+.list-social-media{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+.list-social-media li{
+    margin-left: 25px;
+}
+.list-social-media li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white
+}
+
+.contact{
+    position: relative;
+}
+.contac-title{
+    text-align: center;
+    margin-top: 20px;
+}
+.contac-logo{
+    position: absolute;
+    left: 45%;
+    top: -50px;
+    i{
+        width: 50px;
+        height: 50px;
+        background-color: aqua;
+        color: var(--color-two);
+        border-radius:50% ;
+        font-size: 30px;
+        text-align: center;
+        padding-top: 20%;
+    }
+}
+.contact .form-group{
+    margin-bottom: 20px;
+}
+.contact .db{
+   height: 70px;
+}
+.contact .db2{
+    width: 100%;
+ }
+ .contact .form-group input{
+    background-color: #128AD1 ;
+    color: #fff;
+ } */
+/* end footer */

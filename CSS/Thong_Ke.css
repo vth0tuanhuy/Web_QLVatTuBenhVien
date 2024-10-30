@@ -1,0 +1,156 @@
+body{
+    position: relative;
+    box-sizing: border-box;
+}
+.footer-fix{
+    width: 1540px;
+    position: fixed;
+    bottom: 0%;
+    background-color: var(--color-one);
+    color: #FFF;
+}
+.colored-box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color:var(--color-one);
+    display: none; 
+}
+.footer-fix .footer-title{
+    text-align: center;
+}
+
+
+.header{
+    width: 100%;
+}
+
+.inner-header{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    z-index: 99999;
+}
+.inner-logo{
+    border:1px solid var(--color-one);
+    height: 50px;
+    width: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius:15px ;
+    border-bottom-right-radius:15px ;
+    background-color: var(--color-one);
+    color: #FFF;
+}
+.inner-header-menu ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0%;
+    padding-left: 0%;
+    border-bottom-left-radius:15px ;
+    border-bottom-right-radius:15px ;
+    background-color: #FFF;
+   
+}
+.inner-header-menu ul li{
+    padding-top: 10px;
+    width: 150px;
+    height: 100%;
+    text-align: center;
+}
+.inner-header-menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+.inner-header-menu ul li:hover{
+   cursor: pointer;
+}
+.inner-header-menu ul li:nth-child(1){
+    border-bottom-left-radius:15px ;
+}
+.active1{
+    background-color: var(--color-one);
+    color: #FFF;
+}
+.inner-header-menu ul li:nth-child(5){
+    
+    border-bottom-right-radius:15px ;
+}
+
+
+.inner-background {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    background-image: url('tải\ xuống.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden; /* Đảm bảo phần thừa của video không tràn ra ngoài */
+}
+
+.inner-background .title{
+    position: absolute;
+    left: 5%;
+}
+
+
+/* button */
+.Phieu_button{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 70%;
+    left: 21%;
+    width: 60%;
+}
+button{
+    padding: 5px 5px 0 5px;
+    border: 1px solid var(--color-one);
+    border-radius: 10px ; 
+    background-color: var(--color-one);
+}
+
+/* button */
+/* phiếu tồn */
+.inner_section2 ,.inner_section1{
+    position: absolute;
+    width: 60%;
+    height: 400px;
+    background-color: var(--color-one);
+    left: 21%;
+    bottom: 28%;
+    overflow: auto;
+}
+
+.inner_title ,.inner-content{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+/* Thiết lập CSS cho bảng */
+#result_table ,#result_table1 {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#result_table th, #result_table td ,#result_table1 th, #result_table1 td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+#result_table th ,#result_table1 th {
+    background-color: #f2f2f2;
+}
+
+/* phiếu tồn */

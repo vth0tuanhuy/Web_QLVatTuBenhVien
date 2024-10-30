@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https: //fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="CSS/BASS.css" />
+    <link rel="stylesheet" href="CSS/client.css" />
+  </head>
+  <body>
+    <div class="header container">
+      <div class="inner_header row">
+        <div class="inner_searh col-3">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            name=""
+            id="Search_input"
+            placeholder="Tìm kiếm..."
+          />
+        </div>
+        <div class="inner-logo col-6"><h5>BỆNH VIỆN ĐA KHOA HÀ ĐÔNG.</h5></div>
+        <div class="inner-menu col-3">
+          <a href="https://www.facebook.com/benhviendakhoahadong/?locale=vi_VN"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <h6 class="lien_he">LIÊN HỆ</h6>
+          <div class="log_out">
+            <a href="Login.html"><h6>ĐĂNG XUẤT</h6></a>
+          </div>
+        </div>
+      </div>
+      <div class="inner-list-menu container">
+        <div class="row">
+          <div class="col-4">
+            <div class="vtth1"></div>
+           VẬT TƯ TIÊU HAO
+          </div>
+          <div class="col-4">
+            <div class="csbn2"></div>
+           THIẾT VỊ CHĂM SÓC BỆNH NHÂN
+          </div>
+          <div class="col-4">
+            <div class="tbcd3"></div>
+            THIẾT BỊ CHUẨN ĐOÁN
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section class="section_1">
+        <div class="video">
+          <video autoplay muted loop id="myVideo">
+            <source src="CSS/file.mp4" type="video/mp4" />
+            Your browser does not support HTML5 video.
+          </video>
+        </div>
+        <div class="inner_title">
+          <div class="title"><h1>VẬT TƯ Y TẾ</h1></div>
+          <button class="vat_tu">All supplies</button>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div
+          class="thongbao"
+          style="
+            width: 100%;
+            display: none;
+            height: 600px;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          <h1>Không tìm thấy vật tư...</h1>
+        </div>
+        <div class="section2 row">
+          <div class="inner_Supplies col-4" id="vtth1">
+            <div class="img">
+              <img src="ANH/gang-tay-y-te(2).jpg" alt="" />
+            </div>
+            <div class="id"><span>Ma VT</span><span>vtth1</span></div>
+            <div class="chi_tiet" style="display: none">
+              <div class="img1">
+                <img src="ANH/gang-tay-y-te(2).jpg" alt="" />
+              </div>
+              <div class="hang">
+                CÔNG TY TNHH AN TOÀN LAO ĐỘNG PHÚ THÀNH
+              </div>
+              <div class="mo_ta">
+                <p><b>Mô tả </b></p>
+                Găng tay nitrile ra đời đã giúp ích rất nhiều cho người sử dụng,
+                bởi sản phẩm được làm từ cao su nhân tạo và không gây dị ứng.
+                Tại Việt Nam hiện nay có rất nhiều công ty sản xuất găng tay
+                nitrile đạt chuẩn xuất khẩu để người tiêu dùng lựa chọn.
+              </div>
+              <div class="model">
+                
+                
+                Găng tay nitrile
+              </div>
+            </div>
+            <div class="name">
+              <span>Tên:</span>
+              <span style="color: var(--color-one)"><b>Găng tay y tế</b></span>
+            </div>
+
+            <div class="date_added" style="display: none">
+              <span>Ngày Nhập: </span>
+              <span style="color: var(--color-one)"><b>11/03/2024</b></span>
+            </div>
+            <div class="amount">
+              <span>Số lượng:</span>
+              <span style="color: var(--color-one)"> <b>200 </b></span>
+            </div>
+            <div class="delete-button" style="display: none">Delete</div>
+            <div class="request-button">Cấp vật tư</div>
+          </div>
+          <div class="inner_Supplies col-4" id="vtth2">
+            <div class="img"><img src="ANH/băng_gạt.jpg" alt="" /></div>
+            <div class="id"><span>Ma VT</span><span>vtth2</span></div>
+            <div class="chi_tiet" style="display: none">
+              <div class="img1"><img src="ANH/băng_gạt.jpg" alt="" /></div>
+              <div class="hang">
+                
+                Công ty Bảo Thạch</div>
+              <div class="mo_ta">
+                <p><b>Mô tả </b></p>
+                Khả năng thấm hút cao và nhanh. Mịn màng, mềm mại, không gây
+                kích ứng da. Thân thiện môi trường, gạc trắng và sạch. Băng cuộn
+                là thành phần không thể thiếu trong bộ sơ cứu và tủ thuốc gia
+                đình.
+              </div>
+              <div class="model">
+                
+                
+                Băng cuộn
+              </div>
+            </div>
+            <div class="name">
+              <span>Tên:</span>
+              <span style="color: var(--color-one)"><b>băng tay y tế</b></span>
+            </div>
+
+            <div class="date_added" style="display: none">
+              <span>Ngày Nhập: </span>
+              <span style="color: var(--color-one)"><b>11/03/2024</b></span>
+            </div>
+            <div class="amount">
+              <span>Số lượng:</span>
+              <span style="color: var(--color-one)"> <b>100 </b></span>
+            </div>
+            <div class="delete-button" style="display: none">Delete</div>
+            <div class="request-button">Cấp vật tư</div>
+          </div>
+          <div class="inner_Supplies col-4" id="vtth3">
+            <div class="img"><img src="ANH/kim-1ml.webp" alt="" /></div>
+            <div class="id"><span>Ma VT</span><span>vtth3</span></div>
+            <div class="chi_tiet" style="display: none">
+              <div class="img1"><img src="ANH/kim-1ml.webp" alt="" /></div>
+              <div class="hang">
+                Công ty Cổ phần Thiết bị Y Tế Vinahankook
+              </div>
+              <div class="mo_ta">
+                <p><b>Mô tả </b></p>
+                Đây là loại kim tiêm được sử dụng phổ biến trong các quá trình
+                tiêm vào da hoặc dưới da. Có nhiều kích thước và đường kính khác
+                nhau tùy thuộc vào mục đích sử dụng, ví dụ như kim tiêm nhỏ dùng
+                cho tiêm trong da có thể có chiều dài từ 10mm đến 15mm và đường
+                kính khoảng từ 4/10mm đến 6/10mm.
+              </div>
+              <div class="model">
+                
+                
+                Kim tiêm 5G x 5/8
+              </div>
+            </div>
+            <div class="name">
+              <span>Tên:</span>
+              <span style="color: var(--color-one)"><b>kim tiêm y tế</b></span>
+            </div>
+
+            <div class="date_added" style="display: none">
+              <span>Ngày Nhập: </span>
+              <span style="color: var(--color-one)"><b>11/03/2024</b></span>
+            </div>
+            <div class="amount">
+              <span>Số lượng:</span>
+              <span style="color: var(--color-one)"> <b>200 </b></span>
+            </div>
+            <div class="delete-button" style="display: none">Delete</div>
+            <div class="request-button">Cấp vật tư</div>
+          </div>
+          <div class="inner_Supplies col-4" id="vtth4">
+            <div class="img"><img src="ANH/khẩu_Trang.jpg" alt="" /></div>
+            <div class="id"><span>Ma VT</span><span>vtth4</span></div>
+            <div class="chi_tiet" style="display: none">
+              <div class="img1"><img src="ANH/khẩu_Trang.jpg" alt="" /></div>
+              <div class="hang">
+                 Công ty cổ phần Tanaphar
+              </div>
+              <div class="mo_ta">
+                <p><b>Mô tả </b></p>
+                Cấu tạo bởi 3 lớp, có tác dụng ngăn khói, bụi và vi khuẩn xâm
+                nhập, phòng chống các dịch bệnh nguy hiểm lây qua đường hô hấp.
+                Sử dụng hiệu quả khi lưu thông trên đường hoặc làm việc trong
+                bệnh viện, môi trường công nghiệp độc hại
+              </div>
+              <div class="model">
+                
+                
+                Khẩu trang y tế 4 lớp than hoạt tính
+              </div>
+            </div>
+            <div class="name">
+              <span>Tên:</span>
+              <span style="color: var(--color-one)"
+                ><b>khẩu trang y tế</b></span
+              >
+            </div>
+
+            <div class="date_added" style="display: none">
+              <span>Ngày Nhập: </span>
+              <span style="color: var(--color-one)"><b>11/03/2024</b></span>
+            </div>
+            <div class="amount">
+              <span>Số lượng:</span>
+              <span style="color: var(--color-one)"> <b>300 </b></span>
+            </div>
+            <div class="delete-button" style="display: none">Delete</div>
+            <div class="request-button">Cấp vật tư</div>
+          </div>
+          <div class="inner_Supplies col-4" id="vtth5">
+            <div class="img">
+              <img src="ANH/ao-choang-phau-thuat.webp" alt="" />
+            </div>
+            <div class="id"><span>Ma VT</span><span>vtth5</span></div>
+            <div class="chi_tiet" style="display: none">
+              <div class="img1">
+                <img src="ANH/ao-choang-phau-thuat.webp" alt="" />
+              </div>
+              <div class="hang">
+                 Công ty Rạng Đông Healthcare
+              </div>
+              <div class="mo_ta">
+                <p><b>Mô tả </b></p>
+                Bảo vệ sức khỏe của bệnh nhân: Giúp giảm thiểu rủi ro lây nhiễm
+                và ngăn chặn sự lây lan của vi khuẩn, virus và các tác nhân gây
+                bệnh từ người sử dụng đến bệnh nhân. Bảo vệ sức khỏe của nhân
+                viên y tế: Ngăn chặn sự tiếp xúc với các tác nhân gây bệnh và
+                bảo vệ nhân viên y tế khỏi các chất lỏng và hóa chất trong quá
+                trình tiếp xúc với bệnh nhân.
+              </div>
+              <div class="model">
+                
+                
+                model 1
+              </div>
+            </div>
+            <div class="name">
+              <span>Tên:</span>
+              <span style="color: var(--color-one)"
+                ><b>ÁO choằng phẫu thuật</b></span
+              >
+            </div>
+
+            <div class="date_added" style="display: none">
+              <span>Ngày Nhập: </span>
+              <span style="color: var(--color-one)"><b>11/03/2024</b></span>
+            </div>
+            <div class="amount">
+              <span>Số lượng:</span>
+              <span style="color: var(--color-one)"> <b>50 bộ</b></span>
+            </div>
+            <div class="delete-button" style="display: none">Delete</div>
+            <div class="request-button">Cấp vật tư</div>
+          </div>
+          <div class="inner_Supplies col-4" id="vtth6">
+            <div class="img"><img src="ANH/mu_yte.jpg" alt="" /></div>
+            <div class="id"><span>Ma VT</span><span>vtth6</span></div>
+            <div class="chi_tiet" style="display: none">
+              <div class="img1"><img src="ANH/mu_yte.jpg" alt="" /></div>
+              <div class="hang">
+                
+                Nam Duong PPE</div>
+              <div class="mo_ta">
+                <p><b>Mô tả </b></p>
+                Ngăn ngừa tóc rơi rụng: Đặc biệt hữu ích trong phòng phẫu thuật
+                để tránh tóc rơi vào khu vực làm việc. Bảo vệ khỏi vi khuẩn và
+                virus: Ngăn ngừa lây nhiễm chéo cho người sử dụng và những người
+                xung quanh. Sử dụng rộng rãi trong y tế, bệnh viện, phòng thí
+                nghiệm, chế biến thực phẩm, sản xuất thuốc, mỹ phẩm và nhiều
+                ngành khác.
+              </div>
+              <div class="model">
+                
+                
+                SMS
+              </div>
+            </div>
+            <div class="name">
+              <span>Tên:</span>
+              <span style="color: var(--color-one)"
+                ><b>Mũ chùm đầu y tế</b></span
+              >
+            </div>
+
+            <div class="date_added" style="display: none">
+              <span>Ngày Nhập: </span>
+              <span style="color: var(--color-one)"><b>11/03/2024</b></span>
+            </div>
+            <div class="amount">
+              <span>Số lượng:</span>
+              <span style="color: var(--color-one)"> <b>100 </b></span>
+            </div>
+            <div class="delete-button" style="display: none">Delete</div>
+            <div class="request-button">Cấp vật tư</div>
+          </div>
+
+          <div class="inner_Supplies col-4" id="csbn7">
+            <div class="img"><img src="ANH/xe_lan.jpg" alt="" /></div>
+            <div class="id"><span>Ma VT</span><span>csbn7</span></div>
+            <div class="chi_tiet" style="display: none">
+              <div class="img1"><img src="ANH/xe_lan.jpg" alt="" /></div>
+              <div class="hang">
+                Công ty TNHH Thiết Bị Y Tế Tâm Việt - Xe
+                Lăn Việt
+              </div>
+              <div class="mo_ta">
+                <p><b>Mô tả </b></p>
+                e Lăn Tay Lucass X75 là sản phẩm rất cần thiết cho người già,
+                người bị bệnh, người khuyết tật hay dùng trong bệnh viện, các
+                trung tâm y tế… Khung xe lăn làm từ thép sơn tĩnh điện vô cùng
+                chắc chắn, không bị rỉ sét do thời tiết, chịu được tải trọng
+                người dùng tới 120kg nên đảm bảo an toàn tối đa cho người dùng.
+                Xe lăn lucass X75 còn có bộ 2 phanh tay cho người đẩy giúp việc
+                di chuyển dễ dàng hơn, an toàn hơn khi lên dốc hoặc xuống dốc.
+              </div>
+              <div class="model">
+                
+                
+                Xe Lăn Tay Tiêu Chuẩn Lucass X75
+              </div>
+            </div>
+            <div class="name">
+              <span>Tên:</span>
+              <span style="color: var(--color-one)"><b>Xe lăn</b></span>
+            </div>
+
+            <div class="date_added" style="display: none">
+              <span>Ngày Nhập: </span>
+              <span style="color: var(--color-one)"><b>22/01/2024</b></span>
+            </div>
+            <div class="amount">
+              <span>Số lượng:</span>
+              <span style="color: var(--color-one)"> <b>50 </b></span>
+            </div>
+            <div class="delete-button" style="display: none">Delete</div>
+            <div class="request-button">Cấp vật tư</div>
+          </div>
+          <div class="inner_Supplies col-4" id="csbn8">
+            <div class="img">
+              <img
+                src="ANH/giuong-benh-nhan-da-chuc-nang-lucass-gb-63a (4).jpg"
+                alt=""
+              />
+            </div>
+            <div class="id"><span>Ma VT</span><span>csbn8</span></div>
+            <div class="chi_tiet" style="display: none">
+              <div class="img1">
+                <img
+                  src="ANH/giuong-benh-nhan-da-chuc-nang-lucass-gb-63a (4).jpg"
+                  alt=""
+                />
+              </div>
+              <div class="hang">
+                Công ty TNHH Thiết Bị Y Tế Tâm Việt - Xe
+                Lăn Việt
+              </div>
+              <div class="mo_ta">
+                <p><b>Mô tả </b></p>
+                ặc điểm giường y tế 1 tay quay Lucass GB-8E: Khung giường bằng
+                sắt sơn tĩnh điện Đệm có 2 lớp: Lớp trên là mút êm ái, lớp dưới
+                là xơ dừa giúp thông thoáng và giảm độ xẹp của đệm. Đệm được bọc
+                bằng vải xanh màu bộ đội sạch sẽ và dày dặn 1 tay quay sử dụng
+                để thực hiện chức năng: Nâng hạ đầu
+              </div>
+              <div class="model">
+                
+                
+                Giường y tế 1 tay quay Lucass GB - 8E
+              </div>
+            </div>
+            <div class="name">
+              <span>Tên:</span>
+              <span style="color: var(--color-one)"
+                ><b>Giường bệnh đa chức năng</b></span
+              >
+            </div>
+
+            <div class="date_added" style="display: none">
+              <span>Ngày Nhập: </span>
+              <span style="color: var(--color-one)"><b>22/01/2024</b></span>
+            </div>
+            <div class="amount">
+              <span>Số lượng:</span>
+              <span style="color: var(--color-one)"> <b>10 </b></span>
+            </div>
+            <div class="delete-button" style="display: none">Delete</div>
+            <div class="request-button">Cấp vật tư</div>
+          </div>
+          <div class="inner_Supplies col-4" id="csbn9">
+            <div class="img">
+              <img
+                src="ANH/binh-oxy-y-te-10-lit-day-du-phu-kien-dong-ho-day-tho.jpg"
+                alt=""
+              />
+            </div>
+            <div class="id"><span>Ma VT</span><span>csbn9</span></div>
+            <div class="chi_tiet" style="display: none">
+              <div class="img1">
+                <img
+                  src="ANH/binh-oxy-y-te-10-lit-day-du-phu-kien-dong-ho-day-tho.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="hang">
+                Công ty MECIE Việt Nam
+              </div>
+              <div class="mo_ta">
+                <p><b>Mô tả </b></p>
+                Nhằm cung cấp kịp thời nhu cầu oxy y tế tại các bệnh viện trong
+                công tác phòng, chống dịch Covid-19 ở nhiều địa phương, Công ty
+                MECIE Việt Nam đã thành công trong việc tích hợp và phát triển
+                hệ thống sản xuất oxy y tế di động nhằm phục vụ ứng cứu linh
+                hoạt cho các bệnh viện Dã chiến. Với công suất thiết kế đạt 25
+                Nm3/h (410 lít/phút), tương đương đóng chai đạt 110 bình 40
+                lít/ngày hoặc 450 bình 8 lít/ngày.
+              </div>
+              <div class="model">
+                
+                
+                PSA (Pressure Swing Adsorption)
+              </div>
+            </div>
+            <div class="name">
+              <span>Tên:</span>
+              <span style="color: var(--color-one)"><b>Bình oxi</b></span>
+            </div>
+
+            <div class="date_added" style="display: none">
+              <span>Ngày Nhập: </span>
+              <span style="color: var(--color-one)"><b>22/01/2024</b></span>
+            </div>
+            <div class="amount">
+              <span>Số lượng:</span>
+              <span style="color: var(--color-one)"> <b>20 </b></span>
+            </div>
+            <div class="delete-button" style="display: none">Delete</div>
+            <div class="request-button">Cấp vật tư</div>
+          </div>
+          <div class="inner_Supplies col-4" id="csbn10">
+            <div class="img"><img src="ANH/mặt_nạ.jpg" alt="" /></div>
+            <div class="id"><span>Ma VT</span><span>csbn10</span></div>
+            <div class="chi_tiet" style="display: none">
+              <div class="img1"><img src="ANH/mặt_nạ.jpg" alt="" /></div>
+              <div class="hang">
+                Tổng Công ty cổ phần Y Tế Danameco
+              </div>
+              <div class="mo_ta">
+                <p><b>Mô tả </b></p>
+                Mặt nạ y tế giúp giảm áp lực trực tiếp lên vùng bị thương trên
+                mặt và khuếch tán các lực tác động ra xung quanh1. Lớp bảo vệ
+                này cho phép vận động viên quay lại chơi thể thao sớm hơn, đồng
+                thời giảm nguy cơ bị thương thêm cho vùng mặt và bảo vệ khu vực
+                phẫu thuật
+              </div>
+              <div class="model">
+                
+                
+                Mặt nạ N95
+              </div>
+            </div>
+            <div class="name">
+              <span>Tên:</span>
+              <span style="color: var(--color-one)"><b>Mặt nạ thở</b></span>
+            </div>
+
+            <div class="date_added" style="display: none">
+              <span>Ngày Nhập: </span>
+              <span style="color: var(--color-one)"><b>22/01/2024</b></span>
+            </div>
+            <div class="amount">
+              <span>Số lượng:</span>
+              <span style="color: var(--color-one)"> <b>50 </b></span>
+            </div>
+            <div class="delete-button" style="display: none">Delete</div>
+            <div class="request-button">Cấp vật tư</div>
+          </div>
+          <div class="inner_Supplies col-4" id="csbn11">
+            <div class="img"><img src="ANH/may_nhip_TIm.jpg" alt="" /></div>
+            <div class="id"><span>Ma VT</span><span>csbn11</span></div>
+            <div class="chi_tiet" style="display: none">
+              <div class="img1">
+                <img src="ANH/may_nhip_TIm.jpg" alt="" />
+              </div>
+              <div class="hang">
+                
+                 US Defib – Mỹ</div>
+              <div class="mo_ta">
+                <p><b>Mô tả </b></p>
+                Có khả năng sốc tim, tạo nhịp và đo được các thông số: ECG, nồng
+                độ oxi trong máu, EtCO2, NIBP, chế độ AED,… Nhẹ, di động, thuận
+                tiện cho việc di chuyển bệnh nhân và các trường hợp khẩn cấp. Dễ
+                dàng truy cập vào menu và lựa chọn năng lượng nhanh.
+              </div>
+              <div class="model">
+                Máy sốc tim Cardiostart
+              </div>
+            </div>
+            <div class="name">
+              <span>Tên:</span>
+              <span style="color: var(--color-one)"
+                ><b>Máy theo dõi nhịp tim</b></span
+              >
+            </div>
+
+            <div class="date_added" style="display: none">
+              <span>Ngày Nhập: </span>
+              <span style="color: var(--color-one)"><b>22/01/2024</b></span>
+            </div>
+            <div class="amount">
+              <span>Số lượng:</span>
+              <span style="color: var(--color-one)"> <b>15 </b></span>
+            </div>
+            <div class="delete-button" style="display: none">Delete</div>
+            <div class="request-button">Cấp vật tư</div>
+          </div>
+          <div class="inner_Supplies col-4" id="csbn12">
+            <div class="img"><img src="ANH/nạng.jpg" alt="" /></div>
+            <div class="id"><span>Ma VT</span><span>csbn12</span></div>
+            <div class="chi_tiet" style="display: none">
+              <div class="img1"><img src="ANH/nạng.jpg" alt="" /></div>
+              <div class="hang">
+                 Tổng Công ty cổ phần Y Tế Danameco
+              </div>
+              <div class="mo_ta">
+                <p><b>Mô tả </b></p>
+                Giúp cho người tập đi sau tai nạn, tai biến Giúp cho đi lại vững
+                vàng hơn, có đế cao su chống trơn trượt. Có thể tùy chỉnh chiều
+                cao của nạng theo chiều cao của từng người cho phù hợp.
+              </div>
+              <div class="model">
+                
+                
+                Nạng Gỗ
+              </div>
+            </div>
+            <div class="name">
+              <span>Tên:</span>
+              <span style="color: var(--color-one)"><b>Nạng</b></span>
+            </div>
+
+            <div class="date_added" style="display: none">
+              <span>Ngày Nhập: </span>
+              <span style="color: var(--color-one)"><b>22/01/2024</b></span>
+            </div>
+            <div class="amount">
+              <span>Số lượng:</span>
+              <span style="color: var(--color-one)"> <b>50 </b></span>
+            </div>
+            <div class="delete-button" style="display: none">Delete</div>
+            <div class="request-button">Cấp vật tư</div>
+          </div>
+
+          <div class="inner_Supplies col-4" id="tbcd13">
+            <div class="img"><img src="ANH/may_huyet_ap.jpg" alt="" /></div>
+            <div class="id"><span>Ma VT</span><span>tbcd13</span></div>
+            <div class="chi_tiet" style="display: none">
+              <div class="img1">
+                <img src="ANH/may_huyet_ap.jpg" alt="" />
+              </div>
+              <div class="hang">
+                
+                 Microlife</div>
+              <div class="mo_ta">
+                <p><b>Mô tả </b></p>
+                Một máy đo huyết áp, đồng hồ đo huyết áp hoặc huyết áp kế là một
+                thiết bị được sử dụng để đo huyết áp, bao gồm một vòng bít bơm
+                hơi hạn chế lưu lượng máu, và một thủy ngân hoặc áp kế cơ khí
+                thủy ngân để đo lường các áp lực.
+              </div>
+              <div class="model">
+                Máy đo huyết áp 7130
+              </div>
+            </div>
+            <div class="name">
+              <span>Tên:</span>
+              <span style="color: var(--color-one)"
+                ><b>Máy đo huyết áp</b></span
+              >
+            </div>
+
+            <div class="date_added" style="display: none">
+              <span>Ngày Nhập: </span>
+              <span style="color: var(--color-one)"><b>08/09/2023</b></span>
+            </div>
+            <div class="amount">
+              <span>Số lượng:</span>
+              <span style="color: var(--color-one)"> <b>50 </b></span>
+            </div>
+            <div class="delete-button" style="display: none">Delete</div>
+            <div class="request-button">Cấp vật tư</div>
+          </div>
+          <div class="inner_Supplies col-4" id="tbcd14">
+            <div class="img"><img src="ANH/nhiet_ke.jpg" alt="" /></div>
+            <div class="id"><span>Ma VT</span><span>tbcd14</span></div>
+            <div class="chi_tiet" style="display: none">
+              <div class="img1"><img src="ANH/nhiet_ke.jpg" alt="" /></div>
+              <div class="hang">
+                
+                ETI Việt Nam</div>
+              <div class="mo_ta">
+                <p><b>Mô tả </b></p>
+                Thiết bị cầm tay với khả năng đo nhiệt độ chính xác.
+              </div>
+              <div class="model">
+                
+                
+                Nhiệt Kế Điện Tử Cầm Tay Therma 20
+              </div>
+            </div>
+            <div class="name">
+              <span>Tên:</span>
+              <span style="color: var(--color-one)"
+                ><b>Nhiệt kế điện tử</b></span
+              >
+            </div>
+
+            <div class="date_added" style="display: none">
+              <span>Ngày Nhập: </span>
+              <span style="color: var(--color-one)"><b>08/09/2023</b></span>
+            </div>
+            <div class="amount">
+              <span>Số lượng:</span>
+              <span style="color: var(--color-one)"> <b>50 </b></span>
+            </div>
+            <div class="delete-button" style="display: none">Delete</div>
+            <div class="request-button">Cấp vật tư</div>
+          </div>
+          <div class="inner_Supplies col-4" id="tbcd15">
+            <div class="img"><img src="ANH/ong_nge.jpg" alt="" /></div>
+            <div class="id"><span>Ma VT</span><span>tbcd15</span></div>
+            <div class="chi_tiet" style="display: none">
+              <div class="img1"><img src="ANH/ong_nge.jpg" alt="" /></div>
+              <div class="hang">
+                
+                Y Tế AZ</div>
+              <div class="mo_ta">
+                <p><b>Mô tả </b></p>
+                Một trong những ống nghe y tế phổ biến của thương hiệu Littmann.
+                Có nhiều màu sắc và thiết kế khác nhau.
+              </div>
+              <div class="model">
+                
+                
+                Ống nghe Littmann Classic III
+              </div>
+            </div>
+            <div class="name">
+              <span>Tên:</span>
+              <span style="color: var(--color-one)"><b>Ống nghe y tế</b></span>
+            </div>
+
+            <div class="date_added" style="display: none">
+              <span>Ngày Nhập: </span>
+              <span style="color: var(--color-one)"><b>08/09/2023</b></span>
+            </div>
+            <div class="amount">
+              <span>Số lượng:</span>
+              <span style="color: var(--color-one)"> <b>50 </b></span>
+            </div>
+            <div class="delete-button" style="display: none">Delete</div>
+            <div class="request-button">Cấp vật tư</div>
+          </div>
+          <div class="inner_Supplies col-4" id="tbcd16">
+            <div class="img"><img src="ANH/đèn_soi_tai.jpg" alt="" /></div>
+            <div class="id"><span>Ma VT</span><span>tbcd16</span></div>
+            <div class="chi_tiet" style="display: none">
+              <div class="img1">
+                <img src="ANH/đèn_soi_tai.jpg" alt="" />
+              </div>
+              <div class="hang">
+                 Rudolf RIESTER GmbH (Đức)
+              </div>
+              <div class="mo_ta">
+                <p><b>Mô tả </b></p>
+                Sợi quang học cho chùm sáng tối ưu và cung cấp sự truyền dẫn ánh
+                sáng. Kết hợp với đèn sản sinh ánh sáng thăm khám mát lạnh tương
+                tự ánh sáng ban ngày, giúp bệnh nhân cảm thấy thoải mái trong
+                quá trình thăm khám bệnh. Có thấu kính phóng đại gấp 2.5 lần, có
+                thể tháo ra được.
+              </div>
+              <div class="model">
+                
+                
+                Ri-mini 3010
+              </div>
+            </div>
+            <div class="name">
+              <span>Tên:</span>
+              <span style="color: var(--color-one)"><b>Đèn soi tai </b></span>
+            </div>
+
+            <div class="date_added" style="display: none">
+              <span>Ngày Nhập: </span>
+              <span style="color: var(--color-one)"><b>08/09/2023</b></span>
+            </div>
+            <div class="amount">
+              <span>Số lượng:</span>
+              <span style="color: var(--color-one)"> <b>50 </b></span>
+            </div>
+            <div class="delete-button" style="display: none">Delete</div>
+            <div class="request-button">Cấp vật tư</div>
+          </div>
+          <div class="inner_Supplies col-4" id="tbcd17">
+            <div class="img">
+              <img src="ANH/máy_do_duong_huyet.jpg" alt="" />
+            </div>
+            <div class="id"><span>Ma VT</span><span>tbcd17</span></div>
+            <div class="chi_tiet" style="display: none">
+              <div class="img1">
+                <img src="ANH/máy_do_duong_huyet.jpg" alt="" />
+              </div>
+              <div class="hang">
+                
+                Sinocare Vietnam</div>
+              <div class="mo_ta">
+                <p><b>Mô tả </b></p>
+                Điều kiện vận hành: Nhiệt độ: 10°C ~ 40°C (50°F ~ 104°F) Độ ẩm
+                liên quan: R.H < 90% Mẫu máu: 0.6 μl (máu từ ngón tay, cánh tay
+                và bàn tay) Tỉ lệ hồng cầu (Hct): 30 ~ 55% Nguồn điện: 1 pin
+                CR2032 Tuổi thọ pin: Hơn 1.000 lần thử
+              </div>
+              <div class="model">
+                
+                
+                Sinocare Safe Accu 2
+              </div>
+            </div>
+            <div class="name">
+              <span>Tên:</span>
+              <span style="color: var(--color-one)"
+                ><b>Máy đo đường huyết</b></span
+              >
+            </div>
+
+            <div class="date_added" style="display: none">
+              <span>Ngày Nhập: </span>
+              <span style="color: var(--color-one)"><b>08/09/2023</b></span>
+            </div>
+            <div class="amount">
+              <span>Số lượng:</span>
+              <span style="color: var(--color-one)"> <b>50 bộ</b></span>
+            </div>
+            <div class="delete-button" style="display: none">Delete</div>
+            <div class="request-button">Cấp vật tư</div>
+          </div>
+          <div class="inner_Supplies col-4" id="tbcd18">
+            <div class="img">
+              <img src="ANH/nhiet_ke_thuy_ngan.jpg" alt="" />
+            </div>
+            <div class="id"><span>Ma VT</span><span>tbcd18</span></div>
+            <div class="chi_tiet" style="display: none">
+              <div class="img1">
+                <img src="ANH/nhiet_ke_thuy_ngan.jpg" alt="" />
+              </div>
+              <div class="hang">
+                <p><b>Hãng sản xuất </b></p>
+                Aurora (Việt Nam)
+              </div>
+              <div class="mo_ta">
+                <p><b>Mô tả </b></p>
+                Nhiệt kế thủy ngân được làm bằng chất liệu thủy tinh, có thang
+                chia độ rõ ràng, thiết kế nhỏ gọn và dễ sử dụng. Kiểm tra nhiệt
+                độ trong môi trường và nước.
+              </div>
+              <div class="model">
+                
+                
+                Nhiệt kế thủy ngân Aurora
+              </div>
+            </div>
+            <div class="name">
+              <span>Tên:</span>
+              <span style="color: var(--color-one)"
+                ><b>Nhiệt kế thủy ngân</b></span
+              >
+            </div>
+
+            <div class="date_added" style="display: none">
+              <span>Ngày Nhập: </span>
+              <span style="color: var(--color-one)"><b>08/09/2023</b></span>
+            </div>
+            <div class="amount">
+              <span>Số lượng:</span>
+              <span style="color: var(--color-one)"> <b>50 </b></span>
+            </div>
+            <div class="delete-button" style="display: none">Delete</div>
+            <div class="request-button">Cấp vật tư</div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script>
+        $(document).ready(function () {
+          $(".vat_tu").on("click", function () {
+            $(".section_1").fadeOut(500);
+            $(".inner_Supplies").fadeIn(1000).css("display", "block");
+          });
+          //menu_click
+          $(".inner-list-menu .col-4").on("click", function () {
+            $(".thongbao").css("display", "none");
+            $(".inner-list-menu .col-4").css("color", "#000");
+            $(this).css("color", "var(--color-one)");
+            $(".section_1").fadeOut(500);
+            $(".inner_Supplies").css("display", "none");
+            var check = $(this).find("div").attr("class");
+            var prefix = check.substring(0, 4);
+
+            $(".inner_Supplies").each(function () {
+              var id = $(this).attr("id");
+
+              // Kiểm tra xem ID có chứa chuỗi 'check' không
+              if (id.includes(prefix)) {
+                $(this).fadeIn(1000).css("display", "block");
+              } else {
+                $(this).fadeOut(1000).css("display", "none");
+              }
+            });
+
+            //menu_click
+          });
+          //Search
+
+          $("#Search_input").on("input", function () {
+            var searchValue = $(this).val().toLowerCase();
+
+            $(".thongbao").css("display", "flex");
+
+            $(".section_1").fadeOut(500);
+            $(".inner_Supplies").each(function () {
+              var itemName = $(this)
+                .find(".name span:nth-child(2) b")
+                .text()
+                .toLowerCase();
+              if (itemName.includes(searchValue)) {
+                $(".thongbao").css("display", "none");
+                $(this).css("display", "block");
+              } else {
+                $(this).css("display", "none");
+              }
+            });
+            if (searchValue == "") {
+              $(".inner_Supplies").css("display", "none");
+              $(".thongbao").css("display", "flex");
+            }
+          });
+
+          //Search
+          // xemchitiet
+          // Sử dụng sự kiện "delegated" để xử lý sự kiện click cho phần tử .img trong phần tử .inner_Supplies
+          $(".inner_Supplies").on("click", ".img", function (event) {
+            console.log(1);
+            // Ẩn tất cả các phần tử chi_tiet trước khi hiển thị phần tử được click
+            $(".chi_tiet").css("display", "none");
+            // Hiển thị phần tử chi_tiet liên quan đến phần tử img được click
+            $(this).siblings(".chi_tiet").css("display", "flex");
+            // Ngăn chặn sự kiện click này lan truyền lên các phần tử cha
+            event.stopPropagation();
+          });
+
+          // Khi click vào bất cứ đâu trong document, ẩn tất cả các phần tử chi_tiet
+          $(document).click(function () {
+            $(".chi_tiet").css("display", "none");
+          });
+
+          // Ngăn chặn sự kiện click từ lan truyền khi click vào chi_tiet
+          $(".chi_tiet").click(function (event) {
+            event.stopPropagation();
+          });
+          // kiem tra thay doi trong local storage
+          for (var i = 1; i <= 3; i++) {
+            var savedSupplies = localStorage.getItem("supplies" + i);
+
+            if (savedSupplies) {
+              // Tạo một phần tử jQuery mới từ chuỗi HTML lấy từ Local Storage
+              var $savedSuppliesElement = $(savedSupplies);
+              $savedSuppliesElement.on("click", ".img", function (event) {
+                // Ẩn tất cả các phần tử chi_tiet trước khi hiển thị phần tử được click
+                $(".chi_tiet").css("display", "none");
+                // Hiển thị phần tử chi_tiet liên quan đến phần tử img được click
+                $(this).siblings(".chi_tiet").css("display", "flex");
+                // Ngăn chặn sự kiện click này lan truyền lên các phần tử cha
+                event.stopPropagation();
+              });
+              // Tìm phần tử ".date_added" và ".delete-button" trong phần tử $savedSuppliesElement và ẩn chúng
+              $savedSuppliesElement.find(".date_added").css("display", "none");
+              $savedSuppliesElement.find(".delete-button").css("display", "none");
+              $savedSuppliesElement.find(".request-button").css("display", "block");
+
+              // Nếu i == 1 (phần tử đầu tiên được thêm), xóa nội dung của ".section2"
+              if (i == 1) {
+                $(".section2").html("");
+              }
+
+              // Thêm phần tử đã được chỉnh sửa vào ".section2"
+              $(".section2").append($savedSuppliesElement);
+            }
+          }
+
+          // them vat tu
+          async function getSoluong() {
+      const { value: soluong } = await Swal.fire({
+        title: "Nhập số lượng vật tư muốn cấp",
+        input: "number",
+        inputPlaceholder: "Nhập số lượng"
+      });
+      return soluong;
+    }
+    // $(window).on("beforeunload", function () {
+    //     localStorage.clear();
+    //   });
+    var currentDate = new Date(); // Tạo một đối tượng Date mới, lưu thời gian hiện tại
+    var day = currentDate.getDate(); // Lấy ngày hiện tại
+    var month = currentDate.getMonth() + 1; // Lấy tháng hiện tại, thêm 1 vì getMonth() trả về từ 0-11
+    var year = currentDate.getFullYear(); // Lấy năm hiện tại
+    var hours = currentDate.getHours(); // Lấy giờ hiện tại
+    var minutes = currentDate.getMinutes(); // Lấy phút hiện tại
+    var seconds = currentDate.getSeconds(); // Lấy giây hiện tại
+
+    // Định dạng ngày tháng thành chuỗi "ngày/tháng/năm giờ:phút:giây"
+    var formattedDate = day + '/' + month + '/' + year + ' ' + hours + ':' + minutes + ':' + seconds;
+
+    // Lưu giá trị vào biến 'date'
+    var date = formattedDate;
+  var Account=localStorage.getItem('Accoutacess');
+  var storedData= localStorage.getItem('Request'+Account);
+          
+          var list_request = [];
+           if (storedData) {
+        // Chuyển chuỗi thành mảng các phần tử
+        var dataArray = storedData.split(',');
+
+        // Khởi tạo mảng hai chiều
+
+        // Chia mảng thành các hàng, mỗi hàng có 4 cột
+        for (var i = 0; i < dataArray.length; i += 5) {
+            if (i + 5 <= dataArray.length) {  // Đảm bảo mỗi hàng đều có đủ 4 phần tử
+                list_request.push(dataArray.slice(i, i + 5));
+            }
+        }
+      }
+            $('.request-button').click( async function() {
+  
+    var soluong = await getSoluong();
+    var innerSupplies = $(this).closest('.inner_Supplies');
+                    var id = innerSupplies.attr('id');
+                    var name= innerSupplies.find('.name span:nth-of-type(2)').text().trim();
+                    var date1=innerSupplies.find('.date_added span:nth-of-type(2)').text().trim();
+                    var Vt_request=[Account,id,name,soluong,date,date1];
+                    if (typeof soluong !== "undefined") {
+                      list_request.push(Vt_request);
+                      
+                      localStorage.setItem('Request'+Account,list_request);
+
+                    }
+                });
+
+  
+        });
+
+
+// lienhe
+
+$(".lien_he").on('click',function(){
+  var lienhe=[];
+  async function getAccount() {
+    const { value: email } = await Swal.fire({
+        title: "Liên Hệ",
+        input: 'email',
+        inputLabel: 'Email',
+        inputPlaceholder: 'Email của bạn',
+        inputAttributes: {
+            'aria-label': 'Email của bạn'
+        },
+        showCancelButton: true,
+        preConfirm: (email) => {
+            if (!validateEmail(email)) {
+                Swal.showValidationMessage("Email không hợp lệ. Vui lòng nhập lại.");
+                return false;
+            }
+            return email;
+        }
+    });
+
+    if (!email) {
+        return; // Nếu người dùng hủy, không làm gì thêm.
+    }
+
+    const { value: message } = await Swal.fire({
+        title: "Nội dung liên hệ",
+        input: 'textarea',
+        inputLabel: 'Message',
+        inputPlaceholder: 'Type your message here...',
+        inputAttributes: {
+            'aria-label': 'Type your message here'
+        },
+        showCancelButton: true
+    });
+
+    if (message) {
+      const now = new Date();
+        const day = now.getDate();
+        const month = now.getMonth() + 1; // Tháng trong JavaScript tính từ 0
+        const year = now.getFullYear();
+        const hours = now.getHours();
+        const minutes = now.getMinutes();
+        const seconds = now.getSeconds();
+        const currentTime = `${day}/${month}/${year} ${hours}:${minutes}:${seconds}`;
+
+        // In ra email, message và thời gian hiện tại
+        console.log("Email:", email);
+        console.log("Message:", message);
+        console.log("Time:", currentTime);
+        list_lienhe=[email,message,currentTime];
+        lienhe.push(list_lienhe);
+        localStorage.setItem("lienhe",lienhe);
+    }
+}
+
+function validateEmail(email) {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@(([^<>()[\]\\.,;:\s@"]+\.[^<>()[\]\\.,;:\s@"]{2,}))$/i;
+    return re.test(String(email).toLowerCase());
+}
+    getAccount();
+
+})
+
+// lienhe
+
+  </script>
+</html>
